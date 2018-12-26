@@ -1,11 +1,19 @@
-<import src="../../wxParser/index.wxml"/>
-<view class="page__bd">
-  <view class="weui-article">
-    <view class="weui-article__h1">{{article.title}}</view>
-    <view class="weui-article__section">
-      <view class="weui-article__p">
-        <template is="wxParser" data="{{wxParserData:richText.nodes}}"/>
-      </view>
+<import src="../../wxParser/index.wxml" />
+
+<view class="container">
+  <view class="article">
+    <view class="title">
+      {{article.title}}
+    </view>
+
+    <view class="generate">
+      <view class="publish-date">{{'12月12' || article.published}}</view>
+      |
+      <view class="author">{{article.author.name || 'iewad'}}</view>
+    </view>
+
+    <view class="content">
+      <template is="wxParser" data="{{wxParserData:richText.nodes}}" />
     </view>
   </view>
 </view>

@@ -1,14 +1,11 @@
-<view bindtap="postDetail" data-index="{{index}}" data-link="{{item.link.href}}" class="weui-panel" wx:for="{{posts}}" wx:key="title">
-  <view class="weui-panel__hd">{{item.published}}</view>
-  <view class="weui-panel__bd">
-    <view class="weui-media-box weui-media-box_text">
-      <view class="weui-media-box__title weui-media-box__title_in-text">{{item.title}}</view>
-      <view class="weui-media-box__desc">{{item.summary}}</view>
-      <view class="weui-media-box__info">
-        <view class="weui-media-box__info__meta">{{item.author.name || blogInfo.title}}</view>
-        <view class="weui-media-box__info__meta">{{item.updated}}</view>
-        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{blogInfo.generator}}</view>
-      </view>
+<view class="container">
+  <view class="blog-list" bindtap="postDetail" data-index="{{index}}" data-link="{{item.link.href}}" wx:for="{{posts}}" wx:key="title">
+    <view class="title">{{item.title}}</view>
+    <view class="summary">{{item.summary}}</view>
+    <view class="footer">
+      <view class="published-date">{{"12月25, 周日" || item.published}}</view>
+      <view class="author">{{item.author.name || blogInfo.generator}}</view>
+      <button class="share">分享</button>
     </view>
   </view>
 </view>

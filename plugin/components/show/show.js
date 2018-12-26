@@ -27,6 +27,9 @@ Component({
         key: 'posts',
         success: function (res) {
           var article = res.data[id];
+          _that.setData({
+            article: article
+          });
           wxParser.parse({
             bind: 'richText',
             html: article.content,
@@ -40,9 +43,6 @@ Component({
               });
             }
           });
-          _that.setData({
-            article: article
-          })
         },
       })
     }

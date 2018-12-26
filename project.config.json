@@ -14,5 +14,32 @@
 	"appid": "wx1b9f10a6ef88f6c0",
 	"projectname": "weBlog",
 	"libVersion": "2.4.1",
-	"condition": {}
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "show",
+					"pathName": "pages/show/show",
+					"query": "id=1"
+				}
+			]
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
 }

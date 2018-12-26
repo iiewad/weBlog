@@ -1,1 +1,41 @@
-@import '../../weui.wxss';
+/**@import '../../weui.wxss';**/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background:#EDEDED;
+}
+
+.blog-list {
+  width: 90%;
+  min-height: 300rpx;
+  margin: 20rpx auto;
+  background:rgba(255,255,255,1);
+  border-radius: 8px;
+  color: #333333;
+  padding: 20rpx;
+}
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 12rpx;
+}
+.summary {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30rpx;
+}
+.footer {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+}
+
+.share {
+  width: 110rpx;
+  font-size: 12px;
+  color: #55ACEE;
+  border: unset;
+}
