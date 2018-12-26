@@ -1,7 +1,5 @@
-var plugin = requirePlugin("myPlugin")
 Page({
   onLoad: function() {
-    plugin.getData()
   },
 
   sub_func: function (e) {
