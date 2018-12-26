@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "show": "plugin://myPlugin/show"
+  }
+}

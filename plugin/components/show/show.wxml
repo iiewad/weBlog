@@ -1,0 +1,11 @@
+<import src="../../wxParser/index.wxml"/>
+<view class="page__bd">
+  <view class="weui-article">
+    <view class="weui-article__h1">{{article.title}}</view>
+    <view class="weui-article__section">
+      <view class="weui-article__p">
+        <template is="wxParser" data="{{wxParserData:richText.nodes}}"/>
+      </view>
+    </view>
+  </view>
+</view>

@@ -3,9 +3,16 @@
 	"pluginRoot": "plugin/",
 	"compileType": "plugin",
 	"setting": {
-		"newFeature": true
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false,
+		"uglifyFileName": true
 	},
 	"appid": "wx1b9f10a6ef88f6c0",
 	"projectname": "weBlog",
+	"libVersion": "2.4.1",
 	"condition": {}
 }

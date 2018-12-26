@@ -1,6 +1,7 @@
 {
   "publicComponents": {
-    "list": "components/list/list"
+    "post": "components/post/post",
+    "show": "components/show/show"
   },
   "main": "index.js"
 }

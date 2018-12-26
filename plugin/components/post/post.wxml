@@ -1,0 +1,14 @@
+<view bindtap="postDetail" data-index="{{index}}" data-link="{{item.link.href}}" class="weui-panel" wx:for="{{posts}}" wx:key="title">
+  <view class="weui-panel__hd">{{item.published}}</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">{{item.title}}</view>
+      <view class="weui-media-box__desc">{{item.summary}}</view>
+      <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">{{item.author.name || blogInfo.title}}</view>
+        <view class="weui-media-box__info__meta">{{item.updated}}</view>
+        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{blogInfo.generator}}</view>
+      </view>
+    </view>
+  </view>
+</view>

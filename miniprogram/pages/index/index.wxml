@@ -1,1 +1,1 @@
-<list />
+<post bind:click_btn="sub_func" />
